@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tp2 Laboratorio</title>
+  <link rel="stylesheet" href="stylelogin.css">
+  <script src="login.js"></script>
+</head>
+
+<body>
+  <div class="contenedor">
+    <form onsubmit="validar(); return false;">
+      <h2>Login FX</h2>
+      <div class="input-field">
+        <input type="text" id="usuario" required>
+        <label>ingrese el usuario</label><br>
+      </div>
+      <div class="input-field">
+        <input type="password" id="clave" required>
+        <label>ingrese la contraseña</label><br>
+      </div>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+  </div>
+</body>
+
+</html>
