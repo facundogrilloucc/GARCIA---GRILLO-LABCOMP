@@ -6,7 +6,6 @@
     <title>FX Music</title>
     <link rel="stylesheet" href="principal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="tp2.js"></script>
 </head>
 <body>
 
@@ -19,6 +18,11 @@
             <a href="#" class="navegacion">Inicio</a>
             <a href="#" class="navegacion">Tienda</a>
             <a href="#" class="navegacion">Sobre Mi</a>
+            <a href="#" class="navegacion">Contacto</a>
+            <a href="#" class="navegacion" id="carrito-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="contcarrito" id="contadorcarrito">0</span>
+            </a>
         </nav>
     </header>
 
@@ -84,5 +88,17 @@
             <a href="#" class="enlace"><i class="fab fa-spotify"></i></a>
         </div>
     </footer>
+
+    <!-- Desplegar Carrito -->
+    <div id="desplegar-carrito" class="desplegarcarrito">
+        <h3>Carrito</h3>
+        <ul id="carrito-lista" class="listacarrito"></ul>
+        <div style="display: flex; gap: 1rem; justify-content: center;">
+            <button onclick="cerrarCarrito()" class="botoncerrarcarrito">Cerrar</button>
+            <button class="botonpagarcarrito" disabled>Pagar</button>
+        </div>
+    </div>
+
+    <script src="tp2.js"></script>
 </body>
 </html>

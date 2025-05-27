@@ -28,16 +28,74 @@ header {
 .navegacion {
   color: white; 
   text-decoration: none; 
-  margin: 0 1rem;
+
   transition: font-size 0.2s ease-in-out, text-decoration 0.3s ease-in-out;
+  padding: 1rem 1rem;
 }
 
 .navegacion:hover {
   text-decoration: underline;
-  font-size: 1.1rem;
+  background-color: rgb(46, 46, 46);
 }
 
-.header{
+.contcarrito {
+  background:#7C3AED;
+  color:white;
+  border-radius:50%;
+  padding:2px 8px;
+  font-size:0.9rem;
+  margin-left:4px;
+}
+
+.desplegarcarrito {
+  display: none; 
+  position: fixed; 
+  top: 70px; 
+  right: 20px; 
+  background: white; 
+  color: #333; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+  width: 300px; 
+  z-index: 1000; 
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.desplegarcarrito.activo {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.listacarrito {
+  list-style: none; 
+  padding: 0; 
+  margin: 0 0 1rem 0;
+}
+
+.botoncerrarcarrito {
+  background: #7C3AED; 
+  color: white; 
+  border: none; 
+  border-radius: 1rem; 
+  padding: 0.5rem 1rem; 
+  cursor: pointer;
+}
+
+.botoneliminarcarrito {
+  background:#ef4444; 
+  color:white; 
+  border:none; 
+  border-radius:0.5rem; 
+  padding:0.2rem 0.7rem; 
+  cursor:pointer;
+}
+
+.header {
   background: linear-gradient(135deg, #6e8efb, #a777e3); 
   color: white; 
   text-align: center; 
@@ -74,6 +132,7 @@ header {
   padding: 2rem; 
   max-width: 1200px; 
   margin: 0 auto;
+  padding-bottom: 12rem;
 }
 
 .titulo2 {
@@ -130,6 +189,17 @@ header {
   padding: 0.5rem 1rem; 
   border-radius: 2rem; 
   cursor: pointer;
+}
+
+.botonpagarcarrito {
+  background: #10B981;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 
 .footer {
