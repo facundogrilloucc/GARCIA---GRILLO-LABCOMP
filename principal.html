@@ -10,15 +10,15 @@
 <body>
 
     <!-- Barra de Navegacion-->
-    <header>
+    <header class="cajanavegacion">
         <div class="div1">
             <h1 class="nombre">FX <span style="color: #7C3AED;">Music</span></h1>
         </div>
         <nav>
             <a href="#" class="navegacion">Inicio</a>
-            <a href="#" class="navegacion">Tienda</a>
+            <a href="#albums" class="navegacion">Tienda</a>
             <a href="#" class="navegacion">Sobre Mi</a>
-            <a href="#" class="navegacion">Contacto</a>
+            <a href="#contacto" class="navegacion">Contacto</a>
             <a href="#" class="navegacion" id="carrito-btn">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="contcarrito" id="contadorcarrito">0</span>
@@ -34,7 +34,7 @@
     </section>
 
     <!-- Albums -->
-    <section class="albums">
+    <section class="albums" id="albums">
         <h2 class="titulo2">Álbumes Destacados</h2>
 
         <div class="gridalbums">
@@ -76,6 +76,43 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Album 4 -->
+            <div class="divalbums">
+                <img src="https://source.unsplash.com/random/300x300/?album,music,4" alt="Imagen" class="imagenalbum">
+                <div style="padding: 1rem;">
+                    <h3 class="tituloalbum">Titulo Album 4</h3>
+                    <p class="descripcionalbum">Descripcion</p>
+                    <div class="contenedorpecio">
+                        <span class="precio">$14.99</span>
+                        <button onclick="addToCart(this)" class="botoncarrito">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="sector-contacto" id="contacto">
+        <div class="contacto">
+            <h2 class="tituloform">Contacto</h2>
+            <p class="subtituloform">Si tienes alguna pregunta, no dudes en contactar.</p>
+            <form class="formcontacto">
+                <div class="campoform">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campoform">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campoform">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+            </form>
+            <button type="submit" class="botonenviar">Enviar</button>
         </div>
     </section>
 
@@ -95,7 +132,7 @@
         <ul id="carrito-lista" class="listacarrito"></ul>
         <div style="display: flex; gap: 1rem; justify-content: center;">
             <button onclick="cerrarCarrito()" class="botoncerrarcarrito">Cerrar</button>
-            <button class="botonpagarcarrito" disabled>Pagar</button>
+            <button class="botonpagarcarrito">Pagar</button>
         </div>
     </div>
 

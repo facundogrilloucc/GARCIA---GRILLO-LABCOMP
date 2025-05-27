@@ -15,6 +15,18 @@ header {
   align-items: center;
 }
 
+.cajanavegacion {
+  background-color: #000; 
+  color: white; 
+  padding: 1rem; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .div1 {
   display: flex; 
   align-items: center;
@@ -28,7 +40,6 @@ header {
 .navegacion {
   color: white; 
   text-decoration: none; 
-
   transition: font-size 0.2s ease-in-out, text-decoration 0.3s ease-in-out;
   padding: 1rem 1rem;
 }
@@ -211,4 +222,76 @@ header {
 
 .enlace {
   color: white; margin: 0 0.5rem;
+}
+
+.contacto {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.formcontacto .campoform {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formcontacto label {
+  margin-bottom: 0.5rem;
+  color: #7C3AED;
+  font-weight: bold;
+}
+
+.formcontacto input,
+.formcontacto textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 0.2rem;
+}
+
+.tituloform {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.subtituloform {
+  font-size: 1.1rem;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.botonenviar {
+  background: #7C3AED;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.7rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  align-items: center;
+  margin-top: 1rem;
+  width: 20%;
+  align-self: center;
+}
+
+.botonenviar:hover {
+  background: #5b21b6;
+}
+
+.sector-contacto {
+  background: linear-gradient(135deg, #ede9fe 60%, #a78bfa 100%);
+  padding: 4rem 0 3rem 0;
 }
