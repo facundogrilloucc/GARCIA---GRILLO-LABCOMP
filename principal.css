@@ -1,0 +1,144 @@
+body {
+  font-family: sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  background-color: #f3f4f6; 
+  color: #333;
+}
+
+header {
+  background-color: #000; 
+  color: white; 
+  padding: 1rem; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.div1 {
+  display: flex; 
+  align-items: center;
+}
+
+.nombre {
+  margin: 0; 
+  font-size: 1.5rem;
+}
+
+.navegacion {
+  color: white; 
+  text-decoration: none; 
+  margin: 0 1rem;
+  transition: font-size 0.2s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.navegacion:hover {
+  text-decoration: underline;
+  font-size: 1.1rem;
+}
+
+.header{
+  background: linear-gradient(135deg, #6e8efb, #a777e3); 
+  color: white; 
+  text-align: center; 
+  padding: 3rem 1rem;
+}
+
+.titulo {
+  font-size: 2rem; 
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  font-size: 1.2rem; 
+  margin-bottom: 2rem;
+}
+
+.botonexplorar {
+  background-color: white; 
+  color: #7C3AED; 
+  border: none; 
+  padding: 0.75rem 1.5rem; 
+  border-radius: 2rem; 
+  font-weight: bold; 
+  cursor: pointer;
+}
+
+.botonexplorar:hover {
+  background-color: #7C3AED; 
+  color: white; 
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.albums {
+  padding: 2rem; 
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.titulo2 {
+  text-align: center; 
+  font-size: 1.75rem; 
+  margin-bottom: 2rem;
+}
+  
+.gridalbums {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 1.5rem;
+}
+
+.divalbums {
+  background-color: white; 
+  border-radius: 0.5rem; 
+  overflow: hidden; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.imagenalbum {
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover;
+}
+
+.tituloalbum {
+  margin: 0; 
+  font-size: 1.1rem;
+}
+
+.descripcionalbum {
+  margin: 0.5rem 0;  
+  color: #666;
+}
+
+.contenedorpecio {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-top: 1rem;
+}
+
+.precio {
+  font-weight: bold; 
+  color: #7C3AED;
+}
+
+.botoncarrito {
+  background-color: #7C3AED; 
+  color: white; 
+  border: none; 
+  padding: 0.5rem 1rem; 
+  border-radius: 2rem; 
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #000; 
+  color: white; 
+  padding: 2rem; 
+  text-align: center; 
+}
+
+.enlace {
+  color: white; margin: 0 0.5rem;
+}
