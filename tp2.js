@@ -78,3 +78,10 @@ function cerrarCarrito() {
     modal.classList.remove('activo');
     setTimeout(() => { modal.style.display = 'none'; }, 300);
 }
+// es para el botón de "Sobre mí"
+function sobremi() {
+     window.location.href = "sobremi.html";
+}
+function volver() {
+     window.location.href = "principal.html";
+}
