@@ -19,7 +19,7 @@
         <nav>
             <a href="#" class="navegacion">Inicio</a>
             <a href="#albums" class="navegacion">Tienda</a>
-            <a onclick="sobremi()" class="navegacion">Sobre Mi</a>
+            <a href="sobremi.html" class="navegacion">Sobre Mi</a>
             <a href="#contacto" class="navegacion">Contacto</a>
             <a href="#" class="navegacion" id="carrito-btn">
                 <i class="fas fa-shopping-cart"></i>
@@ -32,9 +32,9 @@
     <section class="header">
         <h2 class="titulo">Descubre música increíble</h2>
         <p class="subtitulo">Compra y descarga tus álbumes favoritos</p>
-        <button class="botonexplorar">Explorar</button>
+        <button onclick="location.href='#albums'" class="botonexplorar">Explorar</button>
     </section>
-
+    
     <!-- Albums -->
     <section class="albums" id="albums">
         <h2 class="titulo2">Álbumes Destacados</h2>
@@ -133,7 +133,7 @@
     <div id="desplegar-carrito" class="desplegarcarrito">
         <h3>Carrito</h3>
         <ul id="carrito-lista" class="listacarrito"></ul>
-        <div style="display: flex; gap: 1rem; justify-content: center;">
+        <div class="botonescarrito">
             <button onclick="cerrarCarrito()" class="botoncerrarcarrito">Cerrar</button>
             <button class="botonpagarcarrito">Pagar</button>
         </div>

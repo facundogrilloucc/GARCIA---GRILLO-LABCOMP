@@ -50,7 +50,7 @@ function actualizarCarrito() {
     totalLi.style.fontWeight = 'bold';
     totalLi.style.justifyContent = 'flex-end';
     totalLi.style.display = 'flex';
-    totalLi.innerHTML = `Total: <span style="color:#7C3AED;margin-left:8px;">$${total.toFixed(2)}</span>`;
+    totalLi.innerHTML = `Total: <span class="totalcarrito">$${total.toFixed(2)}</span>`;
     carritoLista.appendChild(totalLi);
 }
 
@@ -78,10 +78,7 @@ function cerrarCarrito() {
     modal.classList.remove('activo');
     setTimeout(() => { modal.style.display = 'none'; }, 300);
 }
-// es para el botón de "Sobre mí"
-function sobremi() {
-     window.location.href = "sobremi.html";
-}
+
 function volver() {
      window.location.href = "principal.html";
 }
